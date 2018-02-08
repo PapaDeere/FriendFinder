@@ -1,7 +1,7 @@
 //You should save your application's data inside of app/data/friends.js as an array of objects. 
 var friendsArray = [
 {
-	name; 'Tonka',
+	name: 'Tonka',
 	photo: './Tonka.jpg',
 	scores: [
 			'1',
@@ -17,7 +17,7 @@ var friendsArray = [
 			]
 },
 {
-	name; 'Happy',
+	name: 'Happy',
 	photo: './happymp4.mp4',
 	scores: [
 			'1',
