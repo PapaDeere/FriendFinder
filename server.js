@@ -7,6 +7,9 @@ var path = require('path');
 
 // Configure the Express application
 var app = express();
+
+app.use(express.static("public"))
+
 var PORT = process.env.PORT || 8080; 
 
 // Parse incoming request bodies
@@ -15,8 +18,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.text());
 
 // Application routes
-require(path.join(__dirname, './app/routing/apiRoutes'))();
-require(path.join(__dirname, './app/routing/htmlRoutes'))();
+require('./app/routing/apiRoutes')(app);
+require('./app/routing/htmlRoutes')(app);
 
 // Start listening on PORT
 app.listen(PORT, function() {
