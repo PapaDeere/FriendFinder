@@ -34,17 +34,17 @@ module.exports = function(app) {
 			console.log('diff = ' + diff);
 
 			if (diff < totalDifference) {
-				console.log('Closest match found = ' + diff);
-				console.log('Friend name = ' + friends[i].name);
-				console.log('Friend image = ' + friends[i].photo);
-
+				
 				totalDifference = diff;
 				matchName = friends[i].name;
 				matchImage = friends[i].photo;
+				console.log('Closest match found = ' + diff);
+				console.log('Friend name = ' + friends[i].name);
+				console.log('Friend image = ' + friends[i].photo);
 			}
 		}
 		friends.push(userInput);
 
-		res.json({status: 'OK', matchName: matchName, matchImage:matchImage});
+		res.json({status: 'OK', matchName: matchName, matchImage: matchImage});
 	}); 
 };

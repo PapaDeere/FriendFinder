@@ -2,23 +2,23 @@
 var friendsArray = [
 {
 	name: 'Tonka',
-	photo: './Tonka.jpg',
+	photo: '../public/img/Tonka.jpg',
 	scores: [
 			'1',
-			'2',
-			'3',
 			'4',
+			'3',
 			'5',
-			'1',
+			'5',
+			'2',
+			'2',
 			'2',
 			'3',
-			'4',
 			'5',
 			]
 },
 {
 	name: 'Happy',
-	photo: './happymp4.mp4',
+	photo: 'http://www.allinspirationquotes.com/wp-content/uploads/2014/06/Happiness-Quotes-Part-1-4.jpg',
 	scores: [
 			'1',
 			'2',
